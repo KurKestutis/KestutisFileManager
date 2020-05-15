@@ -9,7 +9,7 @@ public class Menu {
 
     public void start() {
             // TODO
-            while (exit == 'y') {
+            while (exit != 'n') {
                 System.out.println("Simple Java file manager ver. 1.0.\nSelect file operation");
                 fileOperation();
                 exitMenu();
