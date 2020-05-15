@@ -1,20 +1,22 @@
 package lt.vtmc.ems;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class FileCopy {
 
-    private String fileName;
-    private String newFileName;
+    private String fileDestinationAndName;
+    private String newfileDestinationAndName;
 
-    public FileCopy(String fileName, String newFileName) {
-        this.fileName = fileName;
-        this.newFileName = newFileName;
+    public FileCopy(String fileDestinationAndName, String newfileDestinationAndName) {
+        this.fileDestinationAndName = fileDestinationAndName;
+        this.newfileDestinationAndName = newfileDestinationAndName;
     }
 
     private void copyByteByByte() {
-        try (FileInputStream fis = new FileInputStream(fileName);
-             FileOutputStream fos = new FileOutputStream(newFileName)){
+        try (FileInputStream fis = new FileInputStream(fileDestinationAndName);
+             FileOutputStream fos = new FileOutputStream(newfileDestinationAndName)){
             int dataBox;
             while ((dataBox = fis.read()) != 0){
                 fos.flush();
