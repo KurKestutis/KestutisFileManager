@@ -15,13 +15,21 @@ public class FileCopy {
     }
 
     private void copyByteByByte() {
-        try (FileInputStream fis = new FileInputStream(fileDestinationAndName);
-             FileOutputStream fos = new FileOutputStream(newfileDestinationAndName)){
-            int dataBox;
-            while ((dataBox = fis.read()) != 0){
-                fos.flush();
-                fos.write(dataBox);
+        try {
+			FileInputStream fis = new FileInputStream(fileDestinationAndName);
+            FileOutputStream fos = new FileOutputStream(newfileDestinationAndName)){
+            
+			byte[] buffer = new byte[1024];
+			int dataBox;
+            while ((dataBox = fis.read(buffer)) > 0) {
+                //fos.flush();
+                fos.write(buffer, 0, dataBox);
             }
+			fis.close();
+			fos.close();
+			
+			System.out.println("Copy done successfully!!!!");
+			
         } catch (IOException ex) {
             System.out.println("Error " + ex);
         }
