@@ -37,9 +37,11 @@ public class Menu {
         switch (close) {
             case 'y':
                 exit = 'y';
+				break;
             case 'n':
                 exit = 'n';
                 System.out.println("Good luck!");
+				break;
             default:
                 System.out.println("Wrong symbol!");
                 exit = 'n';
