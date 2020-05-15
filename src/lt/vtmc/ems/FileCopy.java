@@ -17,7 +17,7 @@ public class FileCopy {
     private void copyByteByByte() {
         try {
 			FileInputStream fis = new FileInputStream(fileDestinationAndName);
-            FileOutputStream fos = new FileOutputStream(newfileDestinationAndName)){
+            FileOutputStream fos = new FileOutputStream(newfileDestinationAndName);
             
 			byte[] buffer = new byte[1024];
 			int dataBox;
