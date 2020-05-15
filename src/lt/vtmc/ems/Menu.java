@@ -20,7 +20,7 @@ public class Menu {
         // TODO
         System.out.println("If you want copy file press c: ");
         String read = input.next().toLowerCase();
-        if (read.charAt(0) != 'c'){
+        if (read.charAt(0) == 'c'){
             System.out.println("Input file name: ");
             String readFileName = input.next();
             System.out.println("Input new file name: ");
