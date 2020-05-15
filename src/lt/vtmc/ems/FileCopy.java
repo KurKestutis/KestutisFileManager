@@ -14,7 +14,7 @@ public class FileCopy {
         this.newfileDestinationAndName = newfileDestinationAndName;
     }
 
-    private void copyByteByByte() {
+    public void copyByteByByte() {
         try {
 			FileInputStream fis = new FileInputStream(fileDestinationAndName);
             FileOutputStream fos = new FileOutputStream(newfileDestinationAndName);
