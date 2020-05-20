@@ -19,9 +19,9 @@ public class Menu {
 
     private void fileOperation() {
         // TODO
-        System.out.println("If you want copy file press c: ");
-        String read = input.next().toLowerCase();
-        if (read.charAt(0) == 'c'){
+        //System.out.println("If you want copy file press c: ");
+        //String read = input.next().toLowerCase();
+        if (true){
             System.out.println("Input file destination and name: ");
             String readFileName = input.next();
             System.out.println("Input new file destination and name: ");
