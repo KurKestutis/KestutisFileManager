@@ -1,0 +1,11 @@
+FileCopy.class -> C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar
+   lt.vtmc.ems (FileCopy.class)
+      -> java.io                                            
+      -> java.lang                                          
+Main.class -> C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar
+      -> java.io                                            
+      -> java.lang                                          
+Menu.class -> C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar
+      -> java.io                                            
+      -> java.lang                                          
+      -> java.util                                          
