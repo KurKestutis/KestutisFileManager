@@ -22,7 +22,7 @@ public class Menu {
         //System.out.println("If you want copy file press c: ");
         //String read = input.next().toLowerCase();
         if (true){
-            System.out.println("Input file destination and name: ");
+            System.out.println("Input file destination and name for example\nC:\\Users\\UserName\\Documents\\fileName.txt : ");
             String readFileName = input.next();
             System.out.println("Input new file destination and name: ");
             String readNewFileNAme = input.next();
